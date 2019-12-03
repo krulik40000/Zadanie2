@@ -8,8 +8,35 @@ public class Model {
     private long numberOfNumbers;
     private long numberOfSpecialCharacters;
 
-    public Model(String someString, long numberOfUpperLetters) {
+    public Model(String someString) {
         this.someString = someString;
-        this.numberOfUpperLetters = numberOfUpperLetters;
+    }
+
+    public void setNumberOfLowerLetters(long count) {
+        numberOfLowerLetters=count;
+    }
+
+    public void setNumberOfUpperLetters(long count) {
+        numberOfUpperLetters=count;
+    }
+
+    public void setNumberOfNumbers(long count) {
+        numberOfNumbers=count;
+    }
+
+    public long getNumberOfLowerLetters() {
+        return numberOfLowerLetters;
+    }
+
+    public long getNumberOfNumbers() {
+        return numberOfNumbers;
+    }
+
+    public long getNumberOfUpperLetters() {
+        return numberOfUpperLetters;
+    }
+
+    public void setNumberOfSpecialCharacters(long count) {
+        numberOfSpecialCharacters = count;
     }
 }
